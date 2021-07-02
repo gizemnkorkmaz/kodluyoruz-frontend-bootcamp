@@ -1,9 +1,9 @@
 This homework is a collaborative work. It's a landing page example. We used BEM methodology for class naming, Nunjucks for HTML and SCSS for styling.
 <br/>
-To see the live version **Click [here](https://lasles-vpn-e.netlify.app/#)**
+<br/>
+To see the live version **click [here](https://lasles-vpn-e.netlify.app/#)**
 <br/>
 The team members and their github profiles:
-<br/>
 <br/>
 Alperen's **github page [here](https://github.com/git-Alp)**
 <br/>
