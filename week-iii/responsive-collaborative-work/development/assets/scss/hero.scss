@@ -1,0 +1,55 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 70px 80px 50px 150px;
+
+	&__header{
+		max-width: 555px;
+		margin-right: 40px;
+	}
+
+	&__title {
+		font-size: 50px;
+		line-height: 70px;
+		font-weight: 500;
+	}
+
+	&__content {
+		font-size: 16px;
+		line-height: 30px;
+		color: $paragraph-color;
+	}
+
+	&__figure {
+		max-width: 611px;
+		max-height: 382px;
+	}
+
+	&__button {
+		margin-top: 50px;
+
+		.get-started {
+			width: 250px;
+			height: 60px;
+			border: solid 1px $button-color;
+			border-radius: 10px;
+			background-color: $button-color;
+			color: white;
+			font-size: 16px;
+			font-weight: 700;
+			box-shadow: 1px 34px 54px 1px rgba(245, 56, 56, 0.35);
+			cursor: pointer;
+
+			&:hover{
+				border: 2px solid;
+				background-color: white;
+				color: $button-color;
+				box-shadow: none;
+			}
+		}
+	}
+	
+}
+

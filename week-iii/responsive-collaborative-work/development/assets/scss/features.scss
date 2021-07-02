@@ -1,0 +1,47 @@
+.features {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 150px;
+	background: rgb(248, 248, 248);
+	background: linear-gradient(
+		180deg,
+		rgba(248, 248, 248, 1) 0%,
+		rgba(248, 248, 248, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	@include mq("tablet-xl", max) {
+		flex-direction: column;
+	}
+
+	&__image {
+		padding-right: 150px;
+	}
+	&__info {
+		.features__title {
+			color: $header-color;
+			font-weight: 500;
+			max-width: 383px;
+			@include font-size(35);
+		}
+		.features__text {
+			color: $paragraph-color;
+			@include font-size(16);
+			max-width: 430px;
+		}
+		.features__list {
+			padding: 0;
+			.features__list-item {
+				padding: 10px 20px;
+				list-style: none;
+				background-image: url("../svg/features_tick.svg");
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: 18px;
+				color: $paragraph-color;
+				@include font-size(15);
+			}
+		}
+	}
+}

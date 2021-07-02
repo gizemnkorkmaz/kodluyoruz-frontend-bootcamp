@@ -1,0 +1,61 @@
+.navbar, .navbar__figure, .logo{
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.navbar{
+  
+	.logo{
+		margin-left: 50px;
+
+		.logo__header {
+			padding: 0 10px;
+			color: $header-color;
+			font-size: 20px;
+			font-weight: 500;
+			cursor: pointer;
+		}
+	}
+
+	&__logo, &__titles, &__sign {
+		margin: 50px 75px;
+	}
+
+	&__item {
+		padding: 0 20px;
+		text-decoration: none;
+		color: $paragraph-color;
+		font-weight: 400;
+	}
+
+	&__signin {
+		color: $header-color;
+		border-style: none;
+		background-color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+		margin-right: 30px;
+	}
+
+	&__signup {
+		width: 150px;
+		height: 45px;
+		border-color: $navbar-signup-color;
+		border-radius: 50px;
+		background-color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		color: $navbar-signup-color;
+		cursor: pointer;
+
+		&:hover{
+			background-color: $button-color;
+			color: white;
+
+		}
+	}
+}
+

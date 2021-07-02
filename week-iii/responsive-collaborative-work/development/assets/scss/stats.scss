@@ -1,0 +1,41 @@
+.stats, .stats__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.stats {
+  margin: 100px 150px;
+  padding: 37px;
+  border-radius: 10px;
+  box-shadow: 0 54px 130px -84px #0D1025;
+
+	&__icon {
+		width: 55px;
+		height: 55px;
+		border-radius: 70px;
+		background-color:$info-icon-bgcolor;
+		color: $button-color;
+		margin-right: 36px;
+	}
+
+	&__number {
+		font-size: 25px;
+		font-weight: 700;
+		color: $header-color;
+		line-height: 0;
+	}
+
+	&__text {
+		font-size: 20px;
+		font-weight: 400;
+		color: $paragraph-color;
+	}
+
+	&__vertical-line {
+		height: 125px;
+		width: 2px;
+		background-color: #EEEFF2;
+	}
+}

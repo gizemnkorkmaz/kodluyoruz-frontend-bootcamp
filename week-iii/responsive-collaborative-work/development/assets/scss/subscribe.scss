@@ -1,0 +1,51 @@
+.subscribe{
+
+	 background: linear-gradient(to bottom, white 0 , white 50%, #f8f8f8 51%, #f8f8f8 100%);
+	&__wrap{
+	background: white;
+	margin: 0px 150px;
+	padding: 58.5px 70px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow:0px 0px 30px -5px rgba(0,0,0,0.16);
+			@include mq(tablet-xl, max) {
+  		flex-direction: column;
+			justify-content: center;
+  }
+
+	}
+
+	&__text{
+		text-align: center;
+	}
+
+	&__title{
+		max-width: 372px;
+		color: $header-color;
+		@include font-size(35);
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	&__paragraph{
+		max-width: 410px;
+		color: $paragraph-color;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	&__button{
+		border: none;
+		cursor: pointer;
+		padding: 17.5px 65px;
+		background-color: $button-color;
+		border-radius: 10px;
+		color: white;
+		font-weight: bold;
+		font-family: 'Rubik', sans-serif;
+		box-shadow: 0px 24px 50px -15px $button-color;
+
+	}
+}

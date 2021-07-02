@@ -1,0 +1,29 @@
+.teams {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	&__card {
+		width: 400px;
+		height: 400px;
+		padding: 10px;
+		margin: 10px;
+		border: 2px solid rgb(77, 75, 75);
+		background-color: $pace-bgcolor;
+		@include font-size(20);
+		font-family: fantasy;
+		color: $text-color;
+		text-align: center;
+		&:hover {
+			border: 2px solid $home-bgcolor;
+		}
+		h1 {
+			text-transform: uppercase;
+		}
+		p {
+			h2 {
+				font-style: italic;
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+.header {
+	text-align: center;
+	font-family: fantasy;
+	padding: 30px;
+	color: $text-color;
+	@include font-size(34);
+}

@@ -1,0 +1,79 @@
+.package-plan {
+	text-align: center;
+	background: rgb(248, 248, 248);
+	background: linear-gradient(
+		180deg,
+		rgba(248, 248, 248, 1) 0%,
+		rgba(248, 248, 248, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	&__title {
+		color: $header-color;
+		font-weight: 500;
+		padding-top: 40px;
+		@include font-size(35);
+	}
+	&__text {
+		color: $paragraph-color;
+		font-weight: 300;
+		line-height: 30px;
+	}
+	&__choices {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		padding: 20px 100px;
+		@include mq("tablet-xl", max) {
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	&__choice {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: #ffffff;
+		width: 300px;
+		height: 730px;
+		padding: 30px;
+		border: 2px solid #dddddd;
+		border-radius: 10px;
+		ul {
+			list-style-image: url("../svg/tick.svg");
+			li {
+				color: $paragraph-color;
+				@include font-size(14);
+				text-align: left;
+				padding: 5px;
+				margin: 5px;
+			}
+		}
+		&:hover {
+			border: 2px solid $button-color;
+		}
+	}
+	&__choice-price {
+		color: $header-color;
+		font-weight: 500;
+		@include font-size(24);
+		span {
+			color: $paragraph-color;
+			font-weight: 300;
+		}
+	}
+	&__select-button {
+		color: $button-color;
+		font-family: Rubik;
+		background-color: #ffffff;
+		border: 2px solid $button-color;
+		border-radius: 50px;
+		padding: 10px 70px;
+		&:hover {
+			background-color: $button-color;
+			color: #fff;
+			cursor: pointer;
+		}
+	}
+}
