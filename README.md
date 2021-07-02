@@ -4,14 +4,14 @@ This repository is the collection of the homeworks I did for 93rd İstanbul Fron
 The curriculum of the bootcamp (May-July 2021)
 <br />
 <br />
-Week i - Introduction & Front-End Developer Roadmap
+Week I - Introduction & Front-End Developer Roadmap
 <br />
-Week ii - HTML
+Week II - HTML
 <br />
-Week iii - CSS
+Week III - CSS
 <br />
-Week iv - JavaScript
+Week IV - JavaScript
 <br />
-Week v - Vue.js
+Week V - Vue.js
 <br />
-Week vi - Firebase & Final Project
+Week VI - Firebase & Final Project
