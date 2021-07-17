@@ -1,0 +1,35 @@
+.movies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  &__poster {
+    max-width: 200px;
+    align-self: center;
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    color: #eee;
+    background-color: $bg-color;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    .title {
+      max-width: 200px;
+      align-self: center;
+    }
+    .rating {
+      align-self: flex-end;
+      font-weight: bold;
+      &__star {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+}

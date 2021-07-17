@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: $bg-color;
+  &__nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: $text-color;
+    cursor: pointer;
+  }
+}
