@@ -1948,10 +1948,11 @@ function showMovies(movies) {
 
     movies.innerHTML = "\n  <img src=\"".concat(IMG_PATH + movie.poster_path, "\" class=\"movies__poster\" alt='").concat(movie.original_title, "' />\n  <h3 class=\"title\">").concat(movie.original_title, "</h3>\n  <span class=\"rating\">\n  <img src=\"../svg/star.svg\" class=\"rating__star\"/>\n  ").concat(movie.vote_average, "</span>\n  ");
     movies.classList.add("movies__info");
-    moviesContainer.appendChild(movies);
-    var moviesInfo = document.querySelector(".movies__info");
-    moviesInfo.addEventListener("click", function () {
-      console.log("here");
+    moviesContainer.appendChild(movies); //show movie details on click
+
+    movies.addEventListener("click", function () {
+      moviesContainer.innerHTML = "\n      <div class=\"modal-content\">\n      <h2 class=\"title\">".concat(movie.original_title, "</h2>\n      <img src=\"").concat(IMG_PATH + movie.poster_path, "\" alt='").concat(movie.original_title, "' class=\"movies__poster\" />\n      <p>").concat(movie.overview, "</p>\n      </div>\n");
+      console.log(movie);
     });
   });
 }

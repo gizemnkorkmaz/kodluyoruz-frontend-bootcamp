@@ -37,9 +37,18 @@ function showMovies(movies) {
   `;
     movies.classList.add("movies__info");
     moviesContainer.appendChild(movies);
-    const moviesInfo = document.querySelector(".movies__info");
-    moviesInfo.addEventListener("click", () => {
-      console.log("here");
+    //show movie details on click
+    movies.addEventListener("click", () => {
+      moviesContainer.innerHTML = `
+      <div class="modal-content">
+      <h2 class="title">${movie.original_title}</h2>
+      <img src="${IMG_PATH + movie.poster_path}" alt='${
+        movie.original_title
+      }' class="movies__poster" />
+      <p>${movie.overview}</p>
+      </div>
+`;
+      console.log(movie);
     });
   });
 }
